@@ -1,0 +1,49 @@
+# Titanic Dataset Exploratory Data Analysis Report
+
+## Introduction
+
+This report presents the findings from an exploratory data analysis (EDA) of the Titanic dataset. The analysis aims to uncover patterns and insights about factors that influenced passenger survival during the Titanic disaster of the 1900s, where approximately 38% of passengers survived.
+
+## Dataset Overview
+
+The Titanic dataset contains information about 891 passengers with 12 variables including demographic information, ticket details, and survival status. The dataset is representative of the actual Titanic disaster, with the sample showing a 38.4% survival rate, closely matching historical records.
+
+## Key Findings
+
+### Survival Patterns
+
+- **Gender Impact**: Females had a significantly higher survival rate than males, indicating a "women first" rescue protocol was followed.
+- **Class Influence**: First-class passengers had higher survival rates than second-class passengers, who in turn had higher rates than third-class passengers, suggesting socioeconomic factors played a role in survival.
+- **Embarkation Port**: Survival rates varied by port of embarkation, though this may correlate with passenger class.
+
+### Demographic Analysis
+
+- **Age Distribution**: The analysis included passengers across various age groups, from children to seniors, though age alone didn't appear to be a major determinant of survival.
+- **Family Size**: The created 'FamilySize' feature (combining siblings/spouses and parents/children) showed that family dynamics may have influenced survival chances.
+
+### Missing Data Observations
+
+- **Cabin Information**: The dataset contains significant missing values in the 'Cabin' column, which was dropped from the analysis.
+- **Age and Embarkation**: Missing values in these columns were handled through imputation, using median for Age and mode for Embarkation port.
+
+## Visualization Highlights
+
+The analysis included various visualizations:
+- Count plots showing survival distribution by gender, class, and embarkation port
+- Histograms of age and fare distributions
+- Correlation heatmaps identifying relationships between numerical variables
+- Violin plots showing fare distribution by survival status
+
+## Feature Engineering
+
+Two notable features were engineered to enhance the analysis:
+1. **Family Size**: Combined SibSp (siblings/spouses) and Parch (parents/children) plus one to represent total family members aboard.
+2. **Age Groups**: Categorized passengers into age brackets (Child, Teen, Young Adult, Adult, Senior) for more meaningful analysis.
+
+## Conclusions
+
+The Titanic disaster survival patterns reveal that social factors (gender and class) were stronger determinants of survival than individual characteristics like age. The "women and children first" protocol appears to have been followed, but with a clear class-based bias. These findings provide valuable historical insights and demonstrate how social structures influenced life-and-death decisions during this tragic event.
+
+## Technical Notes
+
+This analysis was performed using Python with pandas for data manipulation, and matplotlib/seaborn for visualization. The Jupyter notebook containing the complete code and detailed analysis is available in the GitHub repository.
