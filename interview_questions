@@ -1,0 +1,34 @@
+
+# Interview Questions & Answers
+
+### 1. What is EDA and why is it important?
+
+Exploratory Data Analysis (EDA) is the process of visually and statistically examining a dataset to summarize its main characteristics, often using graphical representations. EDA is crucial because it helps uncover patterns, spot anomalies, test hypotheses, and check assumptions, all of which guide further analysis or modeling. By understanding the data’s structure and relationships, we can make informed decisions about preprocessing, feature selection, and modeling strategies[4].
+
+### 2. Which plots do you use to check correlation?
+
+To check correlation between numerical variables, I use **heatmaps** to visualize the correlation matrix, as well as **pairplots** to observe pairwise relationships and scatter plots for specific variable pairs. Heatmaps provide a quick overview of all correlations, while pairplots reveal potential nonlinear relationships[4].
+
+### 3. How do you handle skewed data?
+
+Skewed data can be handled by applying transformations such as logarithmic, square root, or Box-Cox transformations to make the distribution more symmetric. Additionally, outliers can be capped or removed, and robust statistical measures like the median can be used instead of the mean for analysis[4].
+
+### 4. How to detect multicollinearity?
+
+Multicollinearity can be detected by examining the correlation matrix for high correlations between independent variables or by calculating the Variance Inflation Factor (VIF) for each feature. A high VIF indicates that a variable is highly collinear with others, which can affect model stability[4].
+
+### 5. What are univariate, bivariate, and multivariate analyses?
+
+- **Univariate analysis** examines one variable at a time (e.g., histograms of age).
+- **Bivariate analysis** explores the relationship between two variables (e.g., survival rate by gender using bar plots).
+- **Multivariate analysis** investigates interactions among three or more variables simultaneously (e.g., survival by class, gender, and age using grouped bar plots or pairplots)[4].
+
+### 6. Difference between heatmap and pairplot?
+
+A **heatmap** displays the correlation matrix as a color-coded grid, summarizing the strength of relationships between all pairs of variables. A **pairplot** creates a matrix of scatterplots for each pair of variables, allowing visual inspection of distributions and relationships. Heatmaps are ideal for quick correlation checks, while pairplots provide more detailed visual insights[4].
+
+### 7. How do you summarize your insights?
+
+I summarize insights by highlighting the most significant patterns, trends, and anomalies discovered during EDA. This includes noting which features are most influential for the target variable, describing distributions, and pointing out any data quality issues or outliers. The summary is supported by visualizations and statistical evidence, and is presented in a concise report or presentation[4].
+
+---
